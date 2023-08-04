@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/unl-map-js@latest/lib/unl-map-js.js"></script>
+    <link
+      href="https://unpkg.com/unl-map-js@0.0.3/lib/unl-map-js.css"
+      rel="stylesheet"
+    />
+    <script>
+      if (global === undefined) {
+        var global = window;
+      }
+    </script>
+
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.0/mapbox-gl-draw.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.0/mapbox-gl-draw.css"
+      type="text/css"
+    />
+    <link
+      rel="preload"
+      href="./src/assets/fonts/Apercu/Apercu Bold.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./src/assets/fonts/Apercu/Apercu Light.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./src/assets/fonts/Apercu/Apercu Medium.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./src/assets/fonts/Apercu/Apercu Regular.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <title>INSR</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

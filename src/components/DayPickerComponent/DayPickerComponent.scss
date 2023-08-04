@@ -1,0 +1,79 @@
+.day-picker-input {
+  @apply absolute top-full mt-1 left-0 bg-white w-full px-7 pb-6 shadow-md rounded-lg z-10;
+
+  .react-calendar {
+    @apply border-0 font-apercu;
+
+    &__navigation {
+      @apply h-[60px] flex items-center border-b border-gray-variant-5;
+
+      &__arrow {
+        @apply min-w-[unset] h-fit text-gray-variant-4 p-1 text-xl;
+      }
+
+      &__prev2-button,
+      &__next2-button {
+        @apply hidden;
+      }
+
+      &__label {
+        @apply p-1;
+
+        &__labelText {
+          @apply text-black-variant-1;
+        }
+      }
+    }
+
+    &__viewContainer {
+    }
+
+    &__month-view {
+      &__weekdays {
+        &__weekday {
+          @apply text-gray-variant-6 font-medium text-[10px] leading-3 mb-2;
+
+          abbr {
+            @apply no-underline;
+          }
+        }
+      }
+    }
+
+    &__tile {
+      @apply font-medium text-sm leading-17 text-black-variant-1 rounded-full py-2.5;
+
+      &--active {
+        @apply bg-primary text-white-variant-1;
+      }
+
+      &--now {
+        @apply bg-white;
+      }
+    }
+  }
+
+  .react-calendar__year-view .react-calendar__tile,
+  .react-calendar__decade-view .react-calendar__tile,
+  .react-calendar__century-view .react-calendar__tile {
+    @apply py-2.5;
+  }
+
+  .react-calendar__tile--active:enabled:hover,
+  .react-calendar__tile--active:enabled:focus,
+  .react-calendar__tile--hasActive,
+  .react-calendar__tile--hasActive:enabled:hover,
+  .react-calendar__tile--hasActive:enabled:focus {
+    @apply bg-primary text-white-variant-1;
+  }
+  .react-calendar__tile--now:enabled:hover {
+    @apply bg-gray-300;
+  }
+  .react-calendar__navigation button:enabled:hover,
+  .react-calendar__navigation button:enabled:focus {
+    @apply bg-white;
+  }
+  .react-calendar__month-view__days__day--neighboringMonth {
+    @apply text-gray-300;
+  }
+}
